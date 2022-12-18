@@ -1,3 +1,4 @@
+import { Ui } from '@myorg/ui';
 import styles from './index.module.css';
 
 export function Index() {
@@ -16,7 +17,7 @@ export function Index() {
               Welcome my-new-app 👋
             </h1>
           </div>
-
+          <Ui />
           <div id="hero" className="rounded">
             <div className="text-container">
               <h2>
@@ -48,7 +49,6 @@ export function Index() {
               </svg>
             </div>
           </div>
-
           <div id="middle-content">
             <div id="learning-materials" className="rounded shadow">
               <h2>Learning materials</h2>
@@ -315,7 +315,6 @@ export function Index() {
               </a>
             </div>
           </div>
-
           <div id="commands" className="rounded shadow">
             <h2>Next steps</h2>
             <p>Here are some things you can do with Nx:</p>
@@ -389,7 +388,6 @@ export function Index() {
               </pre>
             </details>
           </div>
-
           <p id="love">
             Carefully crafted with
             <svg
