@@ -5,3 +5,7 @@
  * .container {
  * }
 */
+
+.container {
+  @apply bg-pink-900;
+}
