@@ -20,7 +20,7 @@
     "@commitlint/config-conventional": "^17.3.0",
     "@commitlint/config-nx-scopes": "^17.2.0",
     "@nrwl/cypress": "15.3.0",
-    "@nrwl/eslint-plugin-nx": "15.3.0",
+    "@nrwl/eslint-plugin-nx": "^15.3.3",
     "@nrwl/jest": "15.3.0",
     "@nrwl/js": "15.3.0",
     "@nrwl/linter": "15.3.0",
