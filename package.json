@@ -2,7 +2,9 @@
   "name": "myorg",
   "version": "0.0.0",
   "license": "MIT",
-  "scripts": {},
+  "scripts": {
+    "prepare": "husky install"
+  },
   "private": true,
   "dependencies": {
     "core-js": "^3.6.5",
