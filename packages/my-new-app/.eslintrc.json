@@ -4,9 +4,19 @@
     "next",
     "next/core-web-vitals",
     "../../.eslintrc.json",
-    "prettier"
+    "prettier",
+    "airbnb-typescript"
   ],
-  "ignorePatterns": ["!**/*", ".next/**/*"],
+  "parserOptions": {
+    "project": "packages/my-new-app/tsconfig.json"
+  },
+  "ignorePatterns": [
+    "!**/*",
+    ".next/**/*",
+    "*.config.js",
+    "*.config.ts",
+    "index.d.ts"
+  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
