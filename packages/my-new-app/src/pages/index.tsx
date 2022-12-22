@@ -1,5 +1,5 @@
-import { Ui } from '@myorg/ui'
-import styles from './index.module.css'
+import { Ui } from '@myorg/ui';
+import styles from './index.module.css';
 
 export function Index() {
   /*
@@ -407,7 +407,7 @@ export function Index() {
         </div>
       </div>
     </div>
-  )
+  );
 }
 
-export default Index
+export default Index;
