@@ -4,6 +4,6 @@ const Configuration = {
    * Referenced packages must be installed
    */
   extends: ['@commitlint/config-conventional', '@commitlint/config-nx-scopes'],
-}
+};
 
-module.exports = Configuration
+module.exports = Configuration;

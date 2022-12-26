@@ -1,6 +1,6 @@
-import { rootMain } from '../../../.storybook/main'
+import { rootMain } from '../../../.storybook/main';
 
-import type { StorybookConfig, Options } from '@storybook/core-common'
+import type { StorybookConfig, Options } from '@storybook/core-common';
 
 const config: StorybookConfig = {
   ...rootMain,
@@ -14,13 +14,13 @@ const config: StorybookConfig = {
   webpackFinal: async (config, { configType }: Options) => {
     // apply any global webpack configs that might have been specified in .storybook/main.ts
     if (rootMain.webpackFinal) {
-      config = await rootMain.webpackFinal(config, { configType } as Options)
+      config = await rootMain.webpackFinal(config, { configType } as Options);
     }
 
     // add your own webpack tweaks if needed
 
-    return config
+    return config;
   },
-}
+};
 
-module.exports = config
+module.exports = config;
