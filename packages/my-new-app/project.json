@@ -55,7 +55,7 @@
       "executor": "@nrwl/linter:eslint",
       "outputs": ["{options.outputFile}"],
       "options": {
-        "lintFilePatterns": ["packages/my-new-app/**/*.{ts,tsx,js,jsx}"]
+        "lintFilePatterns": ["packages/my-new-app/**/*.{ts,tsx,js,jsx,.d.ts}"]
       }
     }
   },

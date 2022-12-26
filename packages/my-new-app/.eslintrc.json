@@ -1,18 +1,42 @@
 {
   "extends": [
+    "airbnb",
+    "airbnb-typescript",
     "plugin:@nrwl/nx/react-typescript",
     "next",
     "next/core-web-vitals",
-    "../../.eslintrc.json"
+    "../../.eslintrc.json",
+    "prettier"
   ],
-  "ignorePatterns": ["!**/*", ".next/**/*"],
+  "parserOptions": {
+    "project": "./tsconfig(.*)?.json"
+  },
+  "ignorePatterns": [
+    "!**/*",
+    ".next/**/*",
+    "next.config.js",
+    "tailwind.config.js"
+  ],
   "overrides": [
     {
       "files": ["*.ts", "*.tsx", "*.js", "*.jsx"],
+      "parserOptions": {
+        "project": "./tsconfig(.*)?.json"
+      },
       "rules": {
         "@next/next/no-html-link-for-pages": [
           "error",
-          "packages/my-new-app/pages"
+          "packages/my-new-app/src/pages"
+        ],
+        "react/jsx-props-no-spreading": [
+          "error",
+          {
+            "exceptions": ["Component"]
+          }
+        ],
+        "import/no-extraneous-dependencies": [
+          "error",
+          { "devDependencies": true }
         ]
       }
     },
@@ -25,9 +49,6 @@
       "rules": {}
     }
   ],
-  "rules": {
-    "@next/next/no-html-link-for-pages": "off"
-  },
   "env": {
     "jest": true
   }
