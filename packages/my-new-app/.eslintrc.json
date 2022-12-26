@@ -28,7 +28,12 @@
           "error",
           "packages/my-new-app/src/pages"
         ],
-        "react/jsx-props-no-spreading": "off",
+        "react/jsx-props-no-spreading": [
+          "error",
+          {
+            "exceptions": ["Component"]
+          }
+        ],
         "import/no-extraneous-dependencies": [
           "error",
           { "devDependencies": true }
